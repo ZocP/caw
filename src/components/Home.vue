@@ -47,6 +47,9 @@ export default {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
 }
 .home_container{
   overflow: hidden;
@@ -56,7 +59,7 @@ export default {
   align-items: center;
 }
 .rotate_pic{
-
+  overflow: hidden;
 }
 .addition_text{
   height: 50px;
@@ -65,14 +68,15 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  height: 500px;
+  width:100%;
 }
 .info{
-  width: 20%;
   height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: darkgray;
+  width:25%;
+
 }
 </style>
