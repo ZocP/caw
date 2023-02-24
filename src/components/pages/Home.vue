@@ -1,6 +1,4 @@
 <template>
-  <navi>
-  </navi>
   <div class="home_container">
     <div class="inner_container">
       <div class="rotate_pic">
@@ -10,7 +8,7 @@
         <p>{{addition_info}}</p>
       </div>
       <div class="info_section">
-        <div class="info" v-for="data in sections" :key="data.name">
+        <div class="info" v-for="data in sections" :key="data.name" @click="routeTo(data.name)">
           {{data.name}}
         </div>
       </div>
@@ -21,8 +19,8 @@
 </template>
 
 <script>
-import picture from "../assets/main_rotate.png"
-import Navigation from "@/components/Navigation";
+import picture from "../../assets/main_rotate.png"
+
 export default {
   name: "Home",
   data(){
@@ -36,9 +34,7 @@ export default {
       ]
     }
   },
-  components: {
-    "navi": Navigation,
-  }
+
 }
 </script>
 
@@ -77,6 +73,6 @@ export default {
   align-items: center;
   background-color: darkgray;
   width:25%;
-
 }
+
 </style>

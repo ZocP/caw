@@ -1,16 +1,20 @@
 <template>
-  <div>
-    <Home></Home>
+  <div id="app">
+    <navi>
+    </navi>
+    <router-view>
+
+    </router-view>
   </div>
 </template>
 
 <script>
-import Home from './components/Home.vue'
+import navigation from "@/components/util/Navigation";
 export default {
   name: 'App',
   components: {
-    Home,
-  }
+    "navi": navigation,
+  },
 }
 </script>
 
@@ -21,9 +25,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  height: 100vh;
+  overflow: hidden;
 }
 html{
-
+  overflow: hidden;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 </style>

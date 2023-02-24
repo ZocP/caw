@@ -1,16 +1,5 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-// import {createRouter} from "vue-router";
-// import {Home} from 'components/Home'
-//
-// const router = [
-//
-// ]
-//
-//
-// const router = VueRouter.createRouter({
-//     history: VueRouter.createWebHashHistory(),
-//
-// })
+import router from './router/router'
+createApp(App).use(router).mount('#app')
 
-createApp(App).mount('#app')
